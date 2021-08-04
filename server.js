@@ -18,7 +18,9 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 
-
+app.get('/',(req,res)=>{
+  res.send("<h1>Api Product</h1> <br/> <h2>.../product :Truy cập product <br/> .../user : Truy cập user </h2>")
+})
 
 //connect router
 let Router =require('./Router');
